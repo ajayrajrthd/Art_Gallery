@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\Xampp\htdocs\sem4 proj\login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <title>Login</title>
+    <div class="background">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25a30d77-d9bf-4300-86ec-ff005d961afa/db7mjjr-ae8d9d87-a24c-4faf-89c0-b4b5706ad9a2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1YTMwZDc3LWQ5YmYtNDMwMC04NmVjLWZmMDA1ZDk2MWFmYVwvZGI3bWpqci1hZThkOWQ4Ny1hMjRjLTRmYWYtODljMC1iNGI1NzA2YWQ5YTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G-KX4K1J0fRpvYB4kf8Hfch92-5DvWOndQStl2octJE" alt=""></img>
+    </div>
+    <div class="login">
+        <div class="square"></div>
+        <div class="container">
+            <div class="heading">
+                <h1>कला-KENDRA</h1>
+            </div>
+            <form action="connect.php" method="post">
+            <div class="uname"><b></b>
+            <input style="padding: 20px; padding-left: 40px;" type="text" placeholder="Username" name="uname" required>
+            </div>
+            <div class="psw"><b></b>
+            <input style="padding: 20px; padding-left: 40px;" type="password" placeholder="Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>
+            <div class="button_1">
+            <button type="submit" name="save" value="Submit"><b>Login</b></button>
+            </div>
+            </form>
+            <div class="register_forgot">
+                <h5>Don't Have An Account?</h5>
+                <a href="register.html"><ul><b>Register</b></ul></a><b> | </b><a href="#"><ul><b>Forgot Password</b></ul></a>
+            </div>
+        </div>       
+    </div>
+</head>
+<body>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+.background img{
+   margin: 0;
+   padding: 0; 
+   opacity: 0.75;
+   top: -100px;
+   position: fixed;
+   height: auto;
+   width: 100%;
+}
+.login .square{
+    position: relative;
+    opacity: 0.85;
+    top: 100px;
+    left: 500px;
+    height: 500px;
+    width: 550px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.login .container{
+    position: relative;
+}
+.login .container .uname{
+    position: absolute;
+    top: -250px;
+    left: 530px;
+    font-size: xx-large;
+}
+.login .container .psw{
+    position: absolute;
+    top: -145px;
+    left: 530px;
+    font-size: xx-large;
+
+}
+.login .container .uname input[type=text]{
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    top: 35px;
+    left: 0px;
+    width: 420px;
+    height: 7px;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+.login .container .psw input[type=password]{
+    position: absolute;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+    top: -5px;
+    left: 0px;
+    width: 420px;
+    height: 7px;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+.login .container .button_1 button {
+    position: absolute;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    left: 670px;
+    top: -70px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Roboto Slab', serif;
+  }
+.login .container .button_1 button:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+.login .container .register_forgot{
+    position: absolute;
+    left: 610px;
+    top: 15px;
+}
+.login .container .register_forgot h5,a{
+    display: inline-block;
+}
+.login .container .register_forgot a{
+    color: #5a5e5d;
+}
+.login .container .register_forgot a:hover{
+    color: #000000;
+    transition-duration: 0.2s;
+}
+.login .container .heading{
+    position: relative;
+    font-family: 'Lobster', cursive;;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: x-large;
+    color: white;
+    background-color: #1a1a1a;
+    top: -370px;
+    left: 500px;
+    width: 285px;
+}
+
+</style>

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container img{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.container .square{
+    position: relative;
+    opacity: 0.95;
+    top: 25px;
+    left: 850px;
+    height: 450px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.container h1{
+    position: absolute;
+    font-family: 'Righteous', cursive;
+    top: 50px;
+    left: 1000px;
+}
+.container hr{
+    position: absolute;
+    border: 0px;
+    top: 110px;
+    width: 500px;
+    height: 2px;
+    left: 850px;
+    background-color: black;
+}
+.container .mail{
+    position: absolute;
+    top: 150px;
+    left: 900px;
+}
+.container .mail input[type=text], .first input[type=text], .last input[type=text], .pass_1 input[type=password], .pass_2 input[type=password]{
+    position: absolute;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 350px;
+    height: 7px;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+.container .first{
+    position: absolute;
+    top: 215px;
+    left: 900px;
+}
+.container .last{
+    position: absolute;
+    top: 280px;
+    left: 900px;
+}
+.container .pass_1{
+    position: absolute;
+    top: 445px;
+    left: 900px; 
+}
+.container .pass_2{
+    position: absolute;
+    top: 510px;
+    left: 900px; 
+}
+.container .button_1 button {
+    position: absolute;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    left: 980px;
+    top: 590px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    font-family: 'Roboto Slab', serif;
+  }
+.container .button_1 button:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+.container .button_1 hr{
+    position: absolute;
+    border: 0px;
+    top: 670px;
+    width: 500px;
+    height: 2px;
+    left: 850px;
+    background-color: black;
+}
+.container .register_forgot{
+    position: absolute;
+    left: 1000px;
+    top: 700px;
+}
+.container .register_forgot h5,a{
+    display: inline-block;
+}
+.container .register_forgot a{
+    color: #5a5e5d;
+}
+.container .register_forgot a:hover{
+    color: #000000;
+    transition-duration: 0.2s;
+}
+.container .gender{
+    position: absolute;
+    left: 60%;
+    top: 100px;
+}
+.container .gender input[type=radio]{
+    margin-left: 50px;
+    cursor: pointer;
+}

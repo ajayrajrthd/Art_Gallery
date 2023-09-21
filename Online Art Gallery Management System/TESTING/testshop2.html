@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8f27d68390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="D:\Xampp\htdocs\sem4 proj\testshop2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header style="position: fixed; z-index: 1;">
+      <h1>Sculptures</h1>
+      <div class="cart-box">
+        <div class="cart-icon">
+          <i class="fas fa-cart-arrow-down fa-2x"></i>
+        </div>
+        <div class="whole-cart-window hide">
+          <h2>Shopping Bag</h2>
+          <div class="cart-wrapper">
+            <!-- <div class="cart-item">
+                       <img src="\img\pic5.jpeg"> 
+                       <div class="details">
+                           <h3>Item Name</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <span class="quantity">Quantity: 1</span>
+                               <span class="price">Price: $23.44</span>
+                           </p>
+                       </div>
+                       <div class="cancel"><i class="fas fa-window-close"></i></div>
+                    </div> -->
+            <!-- item 2 -->
+            <!-- <div class="cart-item">
+                        <img src="\img\pic5.jpeg"> 
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             <span class="quantity">Quantity: 1</span>
+                                <span class="price">Price: $23.44</span>
+                            </p>
+                        </div>
+                        <div class="cancel"><i class="fas fa-window-close"></i></div>
+                     </div> -->
+          </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout">Checkout</div>
+          <div class="view-cart">View Cart</div>
+        </div>
+      </div>
+    </header>
+    <section class="shop-section">
+      <div class="card-wrapper">
+        <div data-id="1" class="card-item">
+          <img src="sculpture1.jpg" />
+          <div class="details">
+            <h3>Wisdom</h3>
+            <p>
+              <span>Artist: Aayush Rokade<br>Dimension: 1240 x 600</span>
+                <span class="price"><b>Price: ₹40000</b></span>
+                <h3>'Thinkers' shall always lack behind the 'Doers'...</h3>
+              <span class="add-to-cart-btn">Add To Cart</span>
+              
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="2" class="card-item">
+          <img src="sculpture2.jpg" />
+          <div class="details">
+            <h3>Chaos</h3>
+            <p>
+              <span>Artist: Ajayraj Rathod<br>Dimension: 600 x 900</span>
+              <span class="price"><b>Price: ₹30000</b></span>
+              <h3>Sir Ajayraj Rathod's epic sculpting!</h3>
+              <span class="add-to-cart-btn">Add To Cart</span>
+              
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="3" class="card-item">
+          <img src="requiem.jpg" />
+          <div class="details">
+            <h3>Requiem</h3>
+            <p>
+              <span>Artist: Aditya Raorane<br>Dimension: 600 x 900</span>
+              <span class="price">Price: ₹50000</span>
+              <h3>Rhythm of universe=Enlightenment!</h3>
+              <span class="add-to-cart-btn">Add To Cart</span>
+              
+            </p>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div data-id="4" class="card-item">
+          <img src="sculpture3.jpg" />
+          <div class="details">
+            <h3>Precision</h3>
+            <p>
+              <span>Artist: Soham Narginge<br>Dimension: 600 x 900</span>
+              <span class="price">Price: ₹40000</span>
+              <h3>Sir Soham Narginge's precise sculpting</h3>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- product 5 -->
+        <div data-id="5" class="card-item">
+          <img src="D:\Xampp\htdocs\sem4 proj\images\Carbon.jpg" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 6 -->
+        <div data-id="6" class="card-item">
+          <img src="D:\Xampp\htdocs\sem4 proj\images\Carbon.jpg" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 7 -->
+        <div data-id="7" class="card-item">
+          <img src="D:\Xampp\htdocs\sem4 proj\images\Carbon.jpg" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 8 -->
+        <div data-id="8" class="card-item">
+          <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $13.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 9 -->
+
+        <div data-id="9" class="card-item">
+          <img src="D:\Xampp\htdocs\sem4 proj\images\Carbon.jpg" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      class CartItem{
+    constructor(name, desc, img, price){
+        this.name = name
+        this.desc = desc
+        this.img=img
+        this.price = price
+        this.quantity = 1
+   }
+}
+class LocalCart{
+    static key = "cartItems"
+
+    static getLocalCartItems(){
+        let cartMap = new Map()
+     const cart = localStorage.getItem(LocalCart.key)   
+     if(cart===null || cart.length===0)  return cartMap
+        return new Map(Object.entries(JSON.parse(cart)))
+    }
+
+    static addItemToLocalCart(id, item){
+        let cart = LocalCart.getLocalCartItems()
+        if(cart.has(id)){
+            let mapItem = cart.get(id)
+            mapItem.quantity +=1
+            cart.set(id, mapItem)
+        }
+        else
+        cart.set(id, item)
+       localStorage.setItem(LocalCart.key,  JSON.stringify(Object.fromEntries(cart)))
+       updateCartUI()
+        
+    }
+
+    static removeItemFromCart(id){
+    let cart = LocalCart.getLocalCartItems()
+    if(cart.has(id)){
+        let mapItem = cart.get(id)
+        if(mapItem.quantity>1)
+       {
+        mapItem.quantity -=1
+        cart.set(id, mapItem)
+       }
+       else
+       cart.delete(id)
+    } 
+    if (cart.length===0)
+    localStorage.clear()
+    else
+    localStorage.setItem(LocalCart.key,  JSON.stringify(Object.fromEntries(cart)))
+       updateCartUI()
+    }
+}
+
+
+const cartIcon = document.querySelector('.fa-cart-arrow-down')
+const wholeCartWindow = document.querySelector('.whole-cart-window')
+wholeCartWindow.inWindow = 0
+const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
+addToCartBtns.forEach( (btn)=>{
+    btn.addEventListener('click', addItemFunction)
+}  )
+
+function addItemFunction(e){
+    const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
+    const img = e.target.parentElement.parentElement.previousElementSibling.src
+    const name = e.target.parentElement.previousElementSibling.textContent
+    const desc = e.target.parentElement.children[0].textContent
+    let price = e.target.parentElement.children[1].textContent
+    price = price.replace("Price: $", '')
+    const item = new CartItem(name, desc, img, price)
+    LocalCart.addItemToLocalCart(id, item)
+ console.log(price)
+}
+
+
+cartIcon.addEventListener('mouseover', ()=>{
+if(wholeCartWindow.classList.contains('hide'))
+wholeCartWindow.classList.remove('hide')
+})
+
+cartIcon.addEventListener('mouseleave', ()=>{
+    // if(wholeCartWindow.classList.contains('hide'))
+    setTimeout( () =>{
+        if(wholeCartWindow.inWindow===0){
+            wholeCartWindow.classList.add('hide')
+        }
+    } ,500 )
+    
+    })
+
+ wholeCartWindow.addEventListener('mouseover', ()=>{
+     wholeCartWindow.inWindow=1
+ })  
+ 
+ wholeCartWindow.addEventListener('mouseleave', ()=>{
+    wholeCartWindow.inWindow=0
+    wholeCartWindow.classList.add('hide')
+})  
+ 
+
+function updateCartUI(){
+    const cartWrapper = document.querySelector('.cart-wrapper')
+    cartWrapper.innerHTML=""
+    const items = LocalCart.getLocalCartItems()
+    if(items === null) return
+    let count = 0
+    let total = 0
+    for(const [key, value] of items.entries()){
+        const cartItem = document.createElement('div')
+        cartItem.classList.add('cart-item')
+        let price = value.price*value.quantity
+        price = Math.round(price*100)/100
+        count+=1
+        total += price
+        total = Math.round(total*100)/100
+        cartItem.innerHTML =
+        `
+        <img src="${value.img}"> 
+                       <div class="details">
+                           <h3>${value.name}</h3>
+                           <p>${value.desc}
+                            <span class="quantity">Quantity: ${value.quantity}</span>
+                               <span class="price">Price: $ ${price}</span>
+                           </p>
+                       </div>
+                       <div class="cancel"><i class="fas fa-window-close"></i></div>
+        `
+       cartItem.lastElementChild.addEventListener('click', ()=>{
+           LocalCart.removeItemFromCart(key)
+       })
+        cartWrapper.append(cartItem)
+    }
+
+    if(count > 0){
+        cartIcon.classList.add('non-empty')
+        let root = document.querySelector(':root')
+        root.style.setProperty('--after-content', `"${count}"`)
+        const subtotal = document.querySelector('.subtotal')
+        subtotal.innerHTML = `SubTotal: $${total}`
+    }
+    else
+    cartIcon.classList.remove('non-empty')
+}
+document.addEventListener('DOMContentLoaded', ()=>{updateCartUI()})
+    </script>
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::after{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+:root{
+    --after-content:'2';
+}
+
+body{
+    width:100vw;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    height:12vh;
+    background-color: rgb(85, 82, 82);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: #ffffff;
+}
+.cart-box{
+    width:26% !important;
+    position: absolute;
+    left:72%;
+    top:25%;
+    /* border:solid 1px blue; */
+    padding:10px 20px;
+}
+h2{
+    font-size: x-large;
+    padding:15px 10px;
+}
+
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+    width:24vw;
+}
+.subtotal{
+    text-align: right;
+    padding:5%;
+}
+.checkout, .view-cart{
+    width:95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(5, 5, 5);
+    font-size: large;
+    color: #fff;
+    margin:10px auto;
+    padding:10px 15px;
+}
+.view-cart{
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.cart-icon{
+    text-align: right;
+}
+
+.cart-item{
+  display:grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding:5% 2%;
+  border-bottom:solid 1px lightgray;  
+}
+
+.cart-item img{
+    width:100%;
+}
+.cart-item .details{
+    padding-left:10%;
+}
+
+.cart-item h3{
+  text-align: left; 
+  margin-bottom:5%; 
+}
+
+.cart-item .price{
+display: block;
+text-align: right;
+margin-top: 35%; 
+  }
+  
+ .quantity{
+     display: block;
+     margin-top:5%;
+ } 
+
+ .fa-window-close{
+     color: brown;
+ }
+ .cancel{
+     text-align: right;
+ }
+ .whole-cart-window{
+     border: solid lightgray 1px;
+     border-top:none;
+     position: fixed;
+     top:12vh;
+     background-color: #fff;
+     margin-right:2%;
+ }
+
+ .hide{
+     display: none;
+ }
+.non-empty::after{
+  content: var(--after-content);
+  font-size: 25px;
+  width:25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top:-20px;
+  right:20%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    left: 150px;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.card-item img{
+    width:45%;
+    opacity: 0.70;
+}
+.card-item img:hover{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    cursor:zoom-in;
+    width: 500px;
+    height: auto;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+.card-item .details{
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span{
+    display: block;
+    margin-top:10px;
+}
+.add-to-cart-btn{
+    width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgb(62, 59, 59);
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
+.add-to-cart-btn:hover{
+  transition-duration: 0.3s;
+  background-color: black;
+}
+</style>

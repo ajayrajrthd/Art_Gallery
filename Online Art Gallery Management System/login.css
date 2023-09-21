@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background img{
+   margin: 0;
+   padding: 0; 
+   opacity: 0.75;
+   top: -100px;
+   position: fixed;
+   height: auto;
+   width: 100%;
+}
+.login .square{
+    position: relative;
+    opacity: 0.85;
+    top: 100px;
+    left: 500px;
+    height: 500px;
+    width: 550px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.login .container{
+    position: relative;
+}
+.login .container .uname{
+    position: absolute;
+    top: -250px;
+    left: 530px;
+    font-size: xx-large;
+}
+.login .container .psw{
+    position: absolute;
+    top: -145px;
+    left: 530px;
+    font-size: xx-large;
+
+}
+.login .container .uname input[type=text]{
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    top: 35px;
+    left: 0px;
+    width: 420px;
+    height: 7px;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+.login .container .psw input[type=password]{
+    position: absolute;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+    top: -5px;
+    left: 0px;
+    width: 420px;
+    height: 7px;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+.login .container .button_1 button {
+    position: absolute;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    left: 670px;
+    top: -70px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Roboto Slab', serif;
+  }
+.login .container .button_1 button:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+.login .container .register_forgot{
+    position: absolute;
+    left: 610px;
+    top: 15px;
+}
+.login .container .register_forgot h5,a{
+    display: inline-block;
+}
+.login .container .register_forgot a{
+    color: #5a5e5d;
+}
+.login .container .register_forgot a:hover{
+    color: #000000;
+    transition-duration: 0.2s;
+}
+.login .container .heading{
+    position: relative;
+    font-family: 'Lobster', cursive;;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: x-large;
+    color: white;
+    background-color: #1a1a1a;
+    top: -370px;
+    left: 500px;
+    width: 285px;
+}

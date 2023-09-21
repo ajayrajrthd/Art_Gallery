@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="U-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./submit bid.css">
+        <script src="https://kit.fontawesome.com/ff42708c8d.js" crossorigin="anonymous"></script>
+        <title>Product details</title>
+        </head>
+        <body>
+            <header class="header">
+                <a href="#" class="logo"> <i class="fa-sharp fa-solid fa-gavel"></i>Auction</a>
+                <nav class="navbar">
+                    <a href="#" class="active">Products</a>
+                    <a href="#">Schedules For Bidding</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Sell Items</a>
+                </nav>
+                <div class="icons">
+                    <div class="fas fa-bars" id="menu-btn"></div>
+                    <div class="fas fa-user" id="login-btn"></div>
+                </div>
+               </header>
+
+
+               <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://th.bing.com/th/id/R.97c7e862be6f3ee1e48452c2a6c8fad9?rik=YG8wcvl8D2kuBA&pid=ImgRaw&r=0" width="100%" id="productimg">
+                        <div class="small-img-row">
+
+                            <div class="small-img-col">
+                                <img src="" width="100%" class="small-img">
+                            </div>
+
+
+                            <div class="small-img-col">
+                                <img src="" width="100%" class="small-img">
+                            </div>
+
+                            <div class="small-img-col">
+                                <img src="" width="100%" class="small-img">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p> Flying FIsh</p>
+                        <h1>Product no.00001</h1>
+                        <span><p id="demo"></p></span>
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("april 12, 2023 20:37:25").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                            
+                              // Get today's date and time
+                              var now = new Date().getTime();
+                                
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+                                
+                              // Time calculations for days, hours, minutes and seconds
+                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                              // Output the result in an element with id="demo"
+                              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                              + minutes + "m " + seconds + "s ";
+                                
+                              // If the count down is over, write some text 
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("demo").innerHTML = "EXPIRED";
+                              }
+                            }, 1000);
+                            </script>
+
+
+
+                        <li>
+                                <h3>Base Price</h3>
+                                <h5>250$</h5>
+                            </li>
+                            <form id="myform">
+                       Enter your bid here: <input type="text" placeholder="Enter you bid amount" name="bid" id="bid" required>
+                    </form>
+                        <button type="btn" class="btn" form="myform"  href="file:///C:/Mini%20project%201/project/callout%20message1.html" >Submit a bid</button>
+                        <h2>   Product Details  </h2>
+                        <h4>A Fantastic piece of Art which represents unity by the person who made it. </h4>
+                    </div>
+                </div>
+               </div>
+
+               <section class="followus">
+                <h3><span>Follow</span> us</h3>
+                <div class="box">
+                    <h4> E-Auction <i class="fa fa-shopping-basket"></i> </h4>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            
+            </div>
+            </section>
+            
+            
+                     <section class="footer">
+            
+                        <div class="box-container">
+            
+            
+                            
+                            <div class="box">
+                                <h3>Quick links</h3>
+                                <a href="#">Products</a>
+                                <a href="#">Schedules for bidding</a>
+                                <a href="#">Dashboard</a>
+                                <a href="#">Sell Items</a>
+                                
+                            </div>
+                    
+                           
+                    
+                            
+                            <div class="box">
+                                <h3>Locations</h3>
+                                <a href="#">India</a>
+                                <a href="#">USA</a>
+                                <a href="#">Japan</a>
+                                <a href="#">France</a>
+                            </div>
+                    
+                            <div class="box">
+                                <h3>Contact info</h3>
+                                <a href="#">+123-456-9870</a>
+                                <a href="#">test@gmail.com</a>
+                                <a href="#">Mumbai,India-400081</a>
+                                 <img src="./card_img.png" alt="">
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="credit">Created by <span>Pranav Patil</span> | all rights reserved</div>
+                    </section>
+        </body>
+        </html>

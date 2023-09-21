@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Testing</title>
+        <link rel="stylesheet" href="store1.css">
+    </head>
+    <body>
+         <div class="banner">
+            <div class="navbar">
+                <!--<img src="one piece skull.png" class="logo"> -->
+                <ul>
+                    <div>
+                    <!--<li><a href="#">Paintings</a></li>-->
+                    <a href="D:\Xampp\htdocs\sem4 proj\TESTING\shop.html"> 
+                    <button type="button"><span></span>Paintings</button>
+                    <a href="D:\Xampp\htdocs\sem4 proj\TESTING\testshop2.html"> 
+                    <button type="button"><span></span>Sculptures</button>
+                    <!--<li><a href="#">Digital-Art</a></li>-->
+                    <a href="D:\Xampp\htdocs\sem4 proj\TESTING\testshop3.html">
+                    <button type="button"><span></span>Digital Art</button>
+                    </div>
+                </ul>
+            </div>
+           <div class="content">
+                <!--<title>कला KENDRA</title>
+                <h1>JOIN US TODAY!!</h1>
+                 <p>Buy and sell your art!!</p>
+                <div>
+                    <a href="login.html"> 
+                    <button type="button"><span></span>Login</button>
+
+                    <a href="register.html"> 
+                    <button type="button"><span></span>Register</button>  -->                   
+                </div>                 
+           </div>
+         </div>          
+    </body>
+<style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(167, 192, 200, 0),rgba(167, 192, 200, 0)),url(artgallery.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{    
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar button{
+    cursor: pointer;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+/*.navbar ul li a{
+    text-decoration: dashed;
+    color:rgb(254, 254, 254);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}*/
+.content{
+   width: 100%;
+   position: absolute;
+   top: 40%;
+   transform: translateY;
+   text-align: center;
+   text-decoration: wavy;
+   color: rgb(236, 238, 241);
+}
+.content h1{
+    font-size: 65px;
+    margin-top: 1px;
+}
+.content p{
+    font-size: 30px;
+    margin: 5px auto;
+    font-weight: bold;
+    line-height: 10px;
+    font-style:italic
+}
+ button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #c1cfd2;
+    font-weight: bold;
+    border: 2px solid #c1cfd2;
+    background:#323738;
+    /*color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;*/
+}
+
+ span{
+    background: #ffffff;
+    height: 100%;
+    width: 0;
+    position: absolute;
+
+
+
+}
+
+/*button:hover span{
+    width: 100%;
+ }
+
+ button:hover{
+    border: none;
+ }*/
+</style>    
+</html>
